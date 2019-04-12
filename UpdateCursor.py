@@ -1,12 +1,12 @@
 import arcpy
 import datetime
 
-ws = r"C:\Users\Nico\Desktop\SCHOOL\SPRING2019\408E\Assignment_03\Assignment_03.gdb"
+ws = r""
 arcpy.env.workspace = ws
 fc = "LandParcels"
 
 n = datetime.datetime.now()
-outfile = open(r"C:\Users\Nico\Desktop\SCHOOL\SPRING2019\408E\Assignment_03\Lab3.txt", "w")
+outfile = open(r"", "w")
 
 with arcpy.da.UpdateCursor(fc, "*") as Cursor:
     for x in Cursor:
