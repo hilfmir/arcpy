@@ -1,7 +1,7 @@
 import arcpy
 
 #set ennvironment
-ws = r"C:\Users\Nico\Desktop\SCHOOL\SPRING2019\408E\Assignment_02\Assignment_02.gdb"
+ws = r""
 arcpy.env.workspace = ws
 
 #assign feature classes
@@ -10,7 +10,7 @@ fc = arcpy.ListFeatureClasses()
 fc.sort()
 
 #create a text file
-OutFile = open(r"C:\Users\Nico\Desktop\SCHOOL\SPRING2019\408E\Assignment_02\Lab2.txt","w")
+OutFile = open(r"","w")
 #Describe each feature class
 for x in fc:
     fc.sort()
