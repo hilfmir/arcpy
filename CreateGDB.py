@@ -1,6 +1,6 @@
 import arcpy
 #arcpy.env.overwriteOutput = True
-FolderPath = r"C:\Users\ndr83893\Desktop\NicoRome\Assignment_04"
+FolderPath = r""
 currGDB = r"Assignment_04.gdb"
 newGDB = r"PCS_Data.gdb"
 arcpy.env.workspace = FolderPath + "\\" + currGDB
@@ -19,7 +19,7 @@ for x in fc:
             arcpy.Delete_management(output)
         arcpy.Project_management(x, output, 26945)
 '''
-shapefile = r"C:\Users\ndr83893\Desktop\NicoRome\Assignment_04\PCS_Data.gdb\SFV_BG_P"
+shapefile = r""
 arcpy.AddField_management(shapefile, "DI", "DOUBLE")
 
 query = "POP_16 > 0"
