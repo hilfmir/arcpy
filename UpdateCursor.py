@@ -25,8 +25,7 @@ with arcpy.da.UpdateCursor(fc, "*") as Cursor:
             Cursor.updateRow(x)
        
       
-del x
-del Cursor
+
 
 outfile.write(str(n))
 outfile.close()
